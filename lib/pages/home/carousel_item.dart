@@ -34,7 +34,7 @@ class CarouselItem extends StatelessWidget {
           return Padding(
             padding: EdgeInsets.only(left: index == 0 ? padding8 : padding0),
             child: Column(
-              children: [
+              children: <Widget>[
                 SizedBox(
                   height: height71,
                   width: width71,

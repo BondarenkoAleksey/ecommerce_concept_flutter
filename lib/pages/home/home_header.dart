@@ -9,24 +9,24 @@ class HomeHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
+      children: <Widget>[
         Padding(
           padding: const EdgeInsets.all(padding8),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
+            children: <Widget>[
               Expanded(child: SizedBox.shrink()),
               Row(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
+                children: <Widget>[
                   Icon(Icons.place, color: ellipse2Color),
                   SizedBox(width: width2),
                   Container(
                     width: width180,
                     height: height30,
                     child: SubmenuButton(
-                      menuChildren: [
+                      menuChildren: <Widget>[
                         Text('Zihuatanejo, Gro'),
                         Text('Zihuatanejo, Gro'),
                       ],
@@ -46,10 +46,9 @@ class HomeHeader extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
+            children: <Widget>[
               Text('Select Category'),
-              TextButton(onPressed: (){},
-                  child: Text('view all'))
+              TextButton(onPressed: () {}, child: Text('view all')),
             ],
           ),
         ),

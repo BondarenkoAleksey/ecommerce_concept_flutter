@@ -1,5 +1,6 @@
-import 'package:ecommerce_concept/design/dimentions.dart';
 import 'package:flutter/material.dart';
+
+import '../../design/dimentions.dart';
 
 class SearchAndQr extends StatelessWidget {
   const SearchAndQr({super.key});
@@ -16,7 +17,7 @@ class SearchAndQr extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
+        children: <Widget>[
           SizedBox(
             width: width300,
             height: height34,
