@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'pages/details/product_details_page.dart';
 import 'pages/home/home_page.dart';
 
 
@@ -14,12 +15,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Dispatcher',
+      title: 'Commerce',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue
       ),
-      home: const HomePage(),
+      home: const ProductDetailsPage(),
     );
   }
 }

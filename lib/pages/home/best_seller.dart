@@ -61,7 +61,7 @@ class BestSeller extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: height12),
+            SizedBox(height: height4),
             _list(context),
           ],
         ),

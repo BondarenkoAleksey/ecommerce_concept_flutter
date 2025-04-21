@@ -1,3 +1,6 @@
+const double fontSize12 = 12;
+const double fontSize18 = 18;
+
 const double height4 = 4;
 const double height12 = 12;
 const double height16 = 16;
@@ -7,6 +10,7 @@ const double height71 = 71;
 
 const double padding0 = 0;
 const double padding8 = 8;
+const double padding12 = 12;
 const double padding16 = 16;
 const double padding20 = 20;
 

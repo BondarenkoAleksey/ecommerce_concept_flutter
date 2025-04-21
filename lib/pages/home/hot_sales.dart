@@ -10,11 +10,7 @@ class HotSales extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(
-        left: padding8,
-        right: padding8,
-        top: padding16,
-      ),
+      padding: const EdgeInsets.only(left: padding8, right: padding8),
       child: SizedBox(
         width: width600,
         child: Column(
@@ -40,7 +36,7 @@ class HotSales extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: height12),
+            SizedBox(height: height4),
             Image.asset(homeIphone12),
           ],
         ),

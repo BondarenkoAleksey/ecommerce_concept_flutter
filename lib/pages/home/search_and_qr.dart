@@ -1,3 +1,4 @@
+import 'package:ecommerce_concept/design/colors.dart';
 import 'package:flutter/material.dart';
 
 import '../../design/dimentions.dart';
@@ -22,10 +23,23 @@ class SearchAndQr extends StatelessWidget {
             width: width300,
             height: height34,
             child: TextField(
+              style: TextStyle(color: ellipse3Color),
               decoration: InputDecoration(
+                filled: true,
+                fillColor: Colors.white,
                 labelText: 'Search',
                 prefixIcon: const Icon(Icons.search),
-                border: OutlineInputBorder(),
+                border: InputBorder.none,
+                enabledBorder: InputBorder.none,
+                focusedBorder: InputBorder.none,
+                contentPadding: const EdgeInsets.symmetric(
+                  horizontal: padding12,
+                  vertical: padding8,
+                ),
+                labelStyle: TextStyle(
+                  fontSize: fontSize12,
+                  color: ellipse3Color50Percent,
+                ),
               ),
             ),
           ),
@@ -36,7 +50,7 @@ class SearchAndQr extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(padding: EdgeInsets.zero),
-              child: Icon(Icons.qr_code),
+              child: Icon(Icons.qr_code, color: ellipse2Color),
             ),
           ),
         ],
