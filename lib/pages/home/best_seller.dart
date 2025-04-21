@@ -1,6 +1,6 @@
-import 'package:ecommerce_concept/design/dimentions.dart';
 import 'package:flutter/material.dart';
 
+import '../../design/dimentions.dart';
 import '../../design/widgets/images.dart';
 
 class BestSeller extends StatelessWidget {

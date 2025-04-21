@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 import '../../design/colors.dart';
+import '../../design/widgets/images.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
   final int currentIndex;
@@ -31,9 +32,9 @@ class CustomBottomNavBar extends StatelessWidget {
               Text('Explorer', style: TextStyle(color: Colors.white)),
             ],
           ),
-          const Icon(Icons.shopping_bag_outlined, color: Colors.white),
-          const Icon(Icons.heart_broken, color: Colors.white),
-          const Icon(Icons.person_outline, color: Colors.white),
+          Image.asset(bagTabbar),
+          Image.asset(heartTabbar),
+          Image.asset(manTabbar),
         ],
       ),
     );
