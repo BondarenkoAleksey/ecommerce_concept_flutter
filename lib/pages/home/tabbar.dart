@@ -1,4 +1,5 @@
 // tabbar.dart
+import 'package:ecommerce_concept/design/dimentions.dart';
 import 'package:flutter/material.dart';
 
 import '../../design/colors.dart';
@@ -17,6 +18,7 @@ class CustomBottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: height71,
       padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
       decoration: BoxDecoration(
         color: ellipse3Color,

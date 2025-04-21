@@ -10,6 +10,8 @@ const double padding8 = 8;
 const double padding16 = 16;
 const double padding20 = 20;
 
+const double radius10 = 10;
+
 const double spacing16 = 16;
 
 const double width2 = 2;
@@ -20,6 +22,7 @@ const double width34 = 34;
 const double width71 = 71;
 const double width180 = 180;
 const double width300 = 300;
+const double width414 = 414;
 const double width600 = 600;
 
 

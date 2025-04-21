@@ -1,4 +1,8 @@
 // home
+const String bottomArrow = 'assets/images/bottom_arrow.png';
+const String locationHome = 'assets/images/location_home.png';
+const String filterHome = 'assets/images/filter_home.png';
+
 const String booksCarousel = 'assets/images/books_carousel.png';
 const String computerCarousel = 'assets/images/computer_carousel.png';
 const String healthCarousel = 'assets/images/health_carousel.png';

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../design/colors.dart';
 import '../../design/dimentions.dart';
 import '../../design/widgets/images.dart';
 
@@ -33,6 +34,7 @@ class BestSeller extends StatelessWidget {
         left: padding8,
         right: padding8,
         top: padding16,
+        bottom: padding16,
       ),
       child: SizedBox(
         width: width600,
@@ -40,7 +42,24 @@ class BestSeller extends StatelessWidget {
           children: <Widget>[
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[Text('Best seller'), Text('see more')],
+              children: <Widget>[
+                Text(
+                  'Best seller',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w700,
+                    color: ellipse3Color,
+                  ),
+                ),
+                Text(
+                  'see more',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 15,
+                    color: ellipse2Color,
+                  ),
+                ),
+              ],
             ),
             SizedBox(height: height12),
             _list(context),
@@ -56,26 +75,70 @@ class BestSeller extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        childAspectRatio: 0.7,
+        childAspectRatio: 181 / 245,
         crossAxisSpacing: spacing16,
         mainAxisSpacing: spacing16,
       ),
       itemCount: phoneImage.length,
       itemBuilder: (BuildContext context, int index) {
-        return SizedBox(
-          width: width300,
+        return Container(
+          width: 181,
+          height: 177,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(radius10),
+          ),
+          padding: const EdgeInsets.only(
+            left: padding8,
+            right: padding8,
+            top: padding8,
+            bottom: padding8,
+          ),
           child: Column(
             children: <Widget>[
-              Image.asset(phoneImage[index]),
+              Expanded(
+                child: Image.asset(phoneImage[index], fit: BoxFit.cover),
+              ),
               SizedBox(height: height12),
-              Row(
-                children: <Widget>[
-                  Text(phoneDiscountPrice[index]),
-                  SizedBox(width: width16),
-                  Text(phonePrice[index]),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: <Widget>[
+                      Text(
+                        phoneDiscountPrice[index],
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w700,
+                          color: ellipse3Color,
+                        ),
+                      ),
+                      SizedBox(width: width16),
+                      Text(
+                        phonePrice[index],
+                        style: TextStyle(
+                          fontSize: 10,
+                          fontWeight: FontWeight.w500,
+                          decoration: TextDecoration.lineThrough,
+                          color: priceColor,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Text(
+                    phoneTitle[index],
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      fontSize: 10,
+                      fontWeight: FontWeight.w400,
+                      color: ellipse3Color,
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
                 ],
               ),
-              Text(phoneTitle[index]),
             ],
           ),
         );

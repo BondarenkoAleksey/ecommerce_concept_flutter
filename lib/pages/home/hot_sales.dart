@@ -1,3 +1,4 @@
+import 'package:ecommerce_concept/design/colors.dart';
 import 'package:flutter/material.dart';
 
 import '../../design/dimentions.dart';
@@ -20,7 +21,24 @@ class HotSales extends StatelessWidget {
           children: <Widget>[
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[Text('Hot sales'), Text('see more')],
+              children: <Widget>[
+                Text(
+                  'Hot sales',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w700,
+                    color: ellipse3Color,
+                  ),
+                ),
+                Text(
+                  'see more',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 15,
+                    color: ellipse2Color,
+                  ),
+                ),
+              ],
             ),
             SizedBox(height: height12),
             Image.asset(homeIphone12),

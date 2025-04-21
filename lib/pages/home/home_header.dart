@@ -1,3 +1,4 @@
+import 'package:ecommerce_concept/design/widgets/images.dart';
 import 'package:flutter/material.dart';
 
 import '../../design/colors.dart';
@@ -20,7 +21,7 @@ class HomeHeader extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Icon(Icons.place, color: ellipse2Color),
+                  Image.asset(locationHome, color: ellipse2Color),
                   SizedBox(width: width2),
                   Container(
                     width: width180,
@@ -30,25 +31,51 @@ class HomeHeader extends StatelessWidget {
                         Text('Zihuatanejo, Gro'),
                         Text('Zihuatanejo, Gro'),
                       ],
-                      trailingIcon: Icon(Icons.arrow_drop_down_circle_outlined),
-                      child: Text('Zihuatanejo, Gro'),
+                      trailingIcon: Image.asset(bottomArrow),
+                      child: Text(
+                        'Zihuatanejo, Gro',
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 15,
+                          color: ellipse3Color,
+                        ),
+                      ),
                     ),
                   ),
                 ],
               ),
               Expanded(child: SizedBox.shrink()),
-              Icon(Icons.filter_alt),
+              Image.asset(filterHome, color: ellipse3Color),
             ],
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 8, right: 8),
+          padding: const EdgeInsets.only(left: padding8, right: padding8),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              Text('Select Category'),
-              TextButton(onPressed: () {}, child: Text('view all')),
+              Text(
+                'Select Category',
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.w700,
+                  color: ellipse3Color,
+                ),
+              ),
+              TextButton(
+                onPressed: () {},
+                child: Text(
+                  'view all',
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                    color: ellipse2Color,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
