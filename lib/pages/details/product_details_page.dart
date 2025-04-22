@@ -57,6 +57,12 @@ class ProductDetailsPage extends StatelessWidget {
           ],
         ),
       ),
+      body: Column(
+        children: <Widget>[
+          Container(),
+          Container()
+        ],
+      ),
     ));
   }
 
