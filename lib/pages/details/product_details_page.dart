@@ -2,6 +2,7 @@ import 'package:ecommerce_concept/design/dimentions.dart';
 import 'package:flutter/material.dart';
 
 import '../../design/colors.dart';
+import 'product_details_carousel.dart';
 
 class ProductDetailsPage extends StatelessWidget {
   const ProductDetailsPage({super.key});
@@ -59,7 +60,7 @@ class ProductDetailsPage extends StatelessWidget {
       ),
       body: Column(
         children: <Widget>[
-          Container(),
+          ImageCarousel(),
           Container()
         ],
       ),

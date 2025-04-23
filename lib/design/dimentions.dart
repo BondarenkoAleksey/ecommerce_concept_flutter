@@ -7,6 +7,7 @@ const double height16 = 16;
 const double height30 = 30;
 const double height34 = 34;
 const double height71 = 71;
+const double height335 = 335;
 
 const double padding0 = 0;
 const double padding8 = 8;
@@ -15,6 +16,7 @@ const double padding16 = 16;
 const double padding20 = 20;
 
 const double radius10 = 10;
+const double radius20 = 20;
 
 const double spacing16 = 16;
 

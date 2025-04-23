@@ -17,3 +17,7 @@ const String xiaomiMi10Pro = 'assets/images/xiaomi_mi_10_pro.png';
 const String bagTabbar = 'assets/images/bag_tabbar.png';
 const String heartTabbar = 'assets/images/heart_tabbar.png';
 const String manTabbar = 'assets/images/man_tabbar.png';
+
+// details
+const String carouselSamsung = 'assets/images/galaxy_note20_ultra.png';
+
