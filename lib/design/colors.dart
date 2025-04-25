@@ -12,3 +12,5 @@ const Color backgroundColor = Color(0xFFF8F8F8);
 const Color priceColor = Color(0xFFCCCCCC);
 
 const Color whiteColor = Color(0XFFFFFFFF);
+
+const Color starColor = Color(0XFFFFB800);
