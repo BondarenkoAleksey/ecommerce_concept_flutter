@@ -21,3 +21,7 @@ const String manTabbar = 'assets/images/man_tabbar.png';
 // details
 const String carouselSamsung = 'assets/images/galaxy_note20_ultra.png';
 
+const String cruIcon = 'assets/images/cru_icon.png';
+const String photoIcon = 'assets/images/photo_icon.png';
+const String ramIcon = 'assets/images/ram_icon.png';
+const String romIcon = 'assets/images/rom_icon.png';
